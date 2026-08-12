@@ -1,0 +1,33 @@
+import json
+from openai import OpenAI
+
+client = OpenAI(api_key="YOUR_OPENAI_API_KEY")
+
+prompt = """
+You are a professional multi-camera video editor.
+There are 3 camera angle videos:
+- camera1_front_left.mp4 (Mainly close-up shots of the speaker/award recipient)
+- camera2_front_right.mp4 (Shots of the side of the stage and the host)
+- camera3_wide_back.mp4 (Wide angle shots of the entire venue and audience)
+
+Based on the following graduation ceremony agenda, generate a 120-second Edit Decision List (EDL JSON) containing: start, end, camera, action, reason.
+The format must be a JSON array.
+
+Ceremony Agenda:
+0-30s: Valedictorian / Outstanding Graduate Speech
+30-70s: Host introduction and ceremony proceedings
+70-120s: State anthem play and overall wide-angle group photo
+"""
+
+response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[{"role": "user", "content": prompt}],
+    response_format={"type": "json_object"}
+)
+
+# Save the AI-generated shot decisions directly as sample_edl.json
+edl_json = json.loads(response.choices[0].message.content)
+with open("sample_edl.json", "w", encoding="utf-8") as f:
+    json.dump(edl_json, f, indent=2)
+
+print("✅ AI camera selection completed. sample_edl.json generated successfully!")
