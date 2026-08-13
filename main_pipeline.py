@@ -29,7 +29,7 @@ def run_pipeline():
             print(f"Warning: cannot find document {video_path}，skip.")
             continue
             
-        print(f"正在处理: {video_path} ({item['start']}s - {item['end']}s)...")
+        print(f"Process now: {video_path} ({item['start']}s - {item['end']}s)...")
         clip = VideoFileClip(video_path).subclipped(item["start"], item["end"])
         
         
