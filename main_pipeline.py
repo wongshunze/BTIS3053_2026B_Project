@@ -60,10 +60,10 @@ def run_pipeline():
     clips.append(credits_text)
 
    
-    print("Rendering and exporting in 3 minutes final_graduation_video.mp4...")
+    print("Rendering and exporting in 3 minutes final_TzuChi_video.mp4...")
     final_clip = concatenate_videoclips(clips, method="compose")
-    final_clip.write_videofile("final_graduation_video.mp4", fps=30, codec="libx264")
-    print("\n✅ Rendering successful! The exported 3-minute full video is: final_graduation_video.mp4[cite: 1, 2]")
+    final_clip.write_videofile("final_TzuChi_video.mp4", fps=30, codec="libx264")
+    print("\n✅ Rendering successful! The exported 3-minute full video is: final_TzuChi_video.mp4[cite: 1, 2]")
 
 if __name__ == "__main__":
     run_pipeline()
