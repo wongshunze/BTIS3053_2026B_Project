@@ -3,42 +3,42 @@
     "start": 0,
     "end": 25,
     "camera": "camera1_front_left.mp4",
-    "action": "Opening Title & Award Speech",
-    "reason": "Front left view for opening speech"
+    "action": "Opening Remarks & Safety Briefing",
+    "reason": "Front-left angle capturing the emcee welcome speech and hall safety briefing"
   },
   {
     "start": 20,
     "end": 50,
     "camera": "camera2_front_right.mp4",
-    "action": "Switch to Stage Emcee",
-    "reason": "Focus on stage proceedings and emcee"
+    "action": "Emcee Address - Significance of Mortarboard & Rice Ear",
+    "reason": "Close-up perspective on the emcee explaining the symbolic meaning of graduation tassels"
   },
   {
     "start": 40,
     "end": 70,
     "camera": "camera4_side_angle.mp4",
-    "action": "Side View - Graduation Presentation",
-    "reason": "Side angle shot of graduates on stage"
+    "action": "Parent Sharing & Kindergarten Retrospective Video",
+    "reason": "Side angle capturing stage sharing alongside the background video screen"
   },
   {
     "start": 60,
     "end": 95,
     "camera": "camera3_wide_back.mp4",
-    "action": "Wide Angle - State Anthem",
-    "reason": "Capture whole hall during Johor Anthem"
+    "action": "Kindergarten Graduates Sign Language Performance",
+    "reason": "Wide rear shot covering all kindergarten children performing filial sign language song"
   },
   {
     "start": 80,
     "end": 115,
     "camera": "camera4_side_angle.mp4",
-    "action": "Side View - Audience & Graduates",
-    "reason": "Show audience and graduate reactions"
+    "action": "Emcee Stage Closing & Gratitude Remarks",
+    "reason": "Side view capturing the emcee expressing heartfelt gratitude to teachers and parents"
   },
   {
     "start": 0,
     "end": 40,
     "camera": "camera5_performance.mp4",
-    "action": "Student Performance & Ceremony Conclusion",
-    "reason": "Capture student musical performance and event conclusion"
+    "action": "Tzu Chi Teachers Sign Language Presentation",
+    "reason": "Dedicated stage performance view highlighting teachers' expressive sign language dance"
   }
 ]
